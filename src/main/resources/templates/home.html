@@ -5,9 +5,18 @@
 <title th:text="${titulo}"></title>
 </head>
 <body>
-	<h1 th:text="${mensaje}"></h1>
-	<p th:text="${fecha}"></p>
+<!-- 	<h1 th:text="${mensaje}"></h1> -->
+<!-- 	<p th:text="${fecha}"></p> -->
 	<!-- otra forma de renderizar un atributo en la vista -->
-	<h3>Hoy es [[${fecha}]]</h3>
+<!-- 	<h3>Hoy es [[${fecha}]]</h3> -->
+
+	<h1>Datos del [[${nombre}]]:</h1>
+	
+	<ul>
+		<li th:text="${nombre}"></li>
+		<li th:text="${fechaPub}"></li>
+		<li th:text="${salario}"></li>
+		<li th:text="${vigente}"></li>
+	</ul>
 </body>
 </html>
