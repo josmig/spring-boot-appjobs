@@ -71,6 +71,7 @@ public class HomeController {
 			vacante1.setDescription("Encargado del mantenimiendo y funcionamiento de las Redes Sociales en la empresa");
 			vacante1.setDate(formato.parse("10-03-2020"));
 			vacante1.setSalary(1500.50);
+			vacante1.setImagen("empresa1.png");
 			vacante1.setDestacado(1);
 			
 			Vacante vacante2 =new Vacante();
@@ -80,6 +81,7 @@ public class HomeController {
 			vacante2.setDate(formato.parse("10-10-2020"));
 			vacante2.setSalary(2300.50);
 			vacante2.setDestacado(0);
+			vacante1.setImagen("empresa2.png");
 						
 			Vacante vacante3 =new Vacante();
 			vacante3.setId(3);
@@ -96,6 +98,7 @@ public class HomeController {
 			vacante4.setDate(formato.parse("14-01-2020"));
 			vacante4.setSalary(1500.50);
 			vacante4.setDestacado(1);
+			vacante1.setImagen("empresa3.png");
 			
 			Vacante vacante5 =new Vacante();
 			vacante5.setId(5);

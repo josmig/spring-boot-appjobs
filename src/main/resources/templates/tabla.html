@@ -9,10 +9,12 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 <body>
 
 	<div class="container">
-		<h1>Tabla de empleos</h1>
+		<img th:src="@{/img/logo.png}" alt="Logo" width="136" height="136">
+		<h1>Tabla de empleos disponibles</h1>
 		<table class="table">
 		<thead>
 			<tr>
+				<th>Logo</th>
 				<th>ID</th>
 				<th>Nombre</th>
 				<th>Descripción</th>
@@ -23,6 +25,9 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 		</thead>
 		<tbody>		
 			<tr th:each=" va : ${vacante}">
+				<td >
+					<img th:src="@{/img/{imgs} (imgs=${va.imagen})}" alt="Logo" width="136" height="136">
+				</td>
 				<td>[[${va.id}]]</td>
 				<td>[[${va.name}]]</td>
 				<td th:text="${va.description}"></td>
