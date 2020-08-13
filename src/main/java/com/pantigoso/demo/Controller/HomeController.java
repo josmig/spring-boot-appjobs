@@ -71,6 +71,7 @@ public class HomeController {
 			vacante1.setDescription("Encargado del mantenimiendo y funcionamiento de las Redes Sociales en la empresa");
 			vacante1.setDate(formato.parse("10-03-2020"));
 			vacante1.setSalary(1500.50);
+			vacante1.setDestacado(1);
 			
 			Vacante vacante2 =new Vacante();
 			vacante2.setId(2);
@@ -78,6 +79,7 @@ public class HomeController {
 			vacante2.setDescription("Encargado del mantenimiendo de redes de la empresa");
 			vacante2.setDate(formato.parse("10-10-2020"));
 			vacante2.setSalary(2300.50);
+			vacante2.setDestacado(0);
 						
 			Vacante vacante3 =new Vacante();
 			vacante3.setId(3);
@@ -85,6 +87,7 @@ public class HomeController {
 			vacante3.setDescription("Elboracion de Software y mantenimiento");
 			vacante3.setDate(formato.parse("20-05-2020"));
 			vacante3.setSalary(3500.50);
+			vacante3.setDestacado(1);
 			
 			Vacante vacante4 =new Vacante();
 			vacante4.setId(4);
@@ -92,6 +95,7 @@ public class HomeController {
 			vacante4.setDescription("Encargado de la verificacion de los empleados");
 			vacante4.setDate(formato.parse("14-01-2020"));
 			vacante4.setSalary(1500.50);
+			vacante4.setDestacado(1);
 			
 			Vacante vacante5 =new Vacante();
 			vacante5.setId(5);
@@ -99,6 +103,7 @@ public class HomeController {
 			vacante5.setDescription("Limpieza de la empresa");
 			vacante5.setDate(formato.parse("15-03-2020"));
 			vacante5.setSalary(1000.50);
+			vacante5.setDestacado(0);
 			
 			lista.add(vacante1);
 			lista.add(vacante2);
