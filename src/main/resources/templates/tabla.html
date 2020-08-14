@@ -26,7 +26,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 		<tbody>		
 			<tr th:each=" va : ${vacante}">
 				<td >
-					<img th:src="@{/img/{imgs} (imgs=${va.imagen})}" alt="Logo" width="136" height="136">
+					<img th:src="@{/img/{img} (img=${va.imagen})}" alt="Logo" width="136" height="136"/>
 				</td>
 				<td>[[${va.id}]]</td>
 				<td>[[${va.name}]]</td>
@@ -36,7 +36,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 				<!--<td th:if="${va.destacado == 1 ? 'Si':'No'}"></td>-->
 				<td class="text-center">
 					<span th:if="${va.destacado == 1}" class="badge badge-success">Si</span>
-					<span th:unless="${va.destacado == 0}" class="badge badge-danger">No</span>
+					<span th:if="${va.destacado == 0}" class="badge badge-danger">No</span>
 				</td>
 			</tr>
 		</tbody>
