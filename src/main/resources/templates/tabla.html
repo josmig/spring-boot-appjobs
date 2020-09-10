@@ -21,6 +21,7 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 				<th>Fecha Publicación</th>
 				<th>Salario</th>
 				<th>Destacado</th>
+				<th>Acciones</th>
 			</tr>			
 		</thead>
 		<tbody>		
@@ -37,6 +38,10 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
 				<td class="text-center">
 					<span th:if="${va.destacado == 1}" class="badge badge-success">Si</span>
 					<span th:if="${va.destacado == 0}" class="badge badge-danger">No</span>
+				</td>
+				<td>
+					<a th:href="@{/vacantes/ver/{id} (id=${va.id}) }"
+						class="btn btn-info">Detalle</a>
 				</td>
 			</tr>
 		</tbody>
