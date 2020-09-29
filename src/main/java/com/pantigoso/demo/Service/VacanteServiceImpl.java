@@ -79,5 +79,16 @@ public class VacanteServiceImpl implements IVacanteService{
 		return lista;
 	}
 
+	@Override
+	public Vacante buscarPorId(Integer id) {
+		// TODO Auto-generated method stub
+		for(Vacante v:lista) {
+			if(v.getId() == id) {
+				return v;
+			}
+		}
+		return null;
+	}
+
 	
 }

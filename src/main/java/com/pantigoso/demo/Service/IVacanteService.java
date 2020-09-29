@@ -6,4 +6,5 @@ import com.pantigoso.demo.Model.Vacante;
 
 public interface IVacanteService {
 	List<Vacante> buscarTodas();
+	Vacante buscarPorId(Integer id);
 }
